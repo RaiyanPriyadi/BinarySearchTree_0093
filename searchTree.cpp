@@ -101,3 +101,52 @@ class BinaryTree{
         }
     }
 };
+
+int main(){
+    BinaryTree obj;
+
+    while(true) {
+        cout << "\nMenu" << endl;
+        cout << "1. Implement insert operation" << endl;
+        cout << "2. Perform inorder traversal" << endl;
+        cout << "3. Perform preorder traversal" << endl;
+        cout << "4. Perform postorder traversal" << endl;
+        cout << "5. Exit" << endl;
+        cout << "\nEnter your choice: ";
+
+        char ch;
+        cin >> ch;
+
+        cout << endl;
+
+        cout << endl;
+        switch(ch) {
+            case '1': {
+                cout << "Enter a Word: ";
+                string Word;
+                cin >> Word;
+                obj.insert(Word);
+                break;
+            }
+            case '2': {
+                obj.inorder(obj.root);
+                break;
+            }
+            case '3': {
+                obj.preorder(obj.root);
+                break;
+            }
+            case '4': {
+                obj.postorder(obj.root);
+                break;
+            }
+            case '5': {
+                return 0;
+            }
+            default: {
+                cout << "Invalid option. Please try again." << endl;
+            }
+        }
+    }
+    return 0;
+}
