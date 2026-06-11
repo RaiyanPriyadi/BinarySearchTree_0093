@@ -80,3 +80,15 @@ public:
             }
         }
    }
+
+   void inorder(Node *ptr)
+   {
+        if (ROOT == NULL)
+        {
+            cout << "tree is empty" << endl;
+            return;    
+        }
+
+        if (ptr != NULL)
+        
+   }
