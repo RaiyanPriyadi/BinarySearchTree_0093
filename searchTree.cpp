@@ -49,5 +49,14 @@ public:
             return;
         }
 
-        
+        if (element < parent->info)
+        {
+            parent->leftchild = newNode;
+        }
+        else
+        {
+            parent->rightchild = newNode;
+        }
     }
+
+    //this function searchs the current node of the specified node 
